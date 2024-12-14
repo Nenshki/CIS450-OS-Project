@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "lv_math.h": "c",
+        "stdio.h": "c",
+        "lv_example_image.h": "c"
+    }
+}

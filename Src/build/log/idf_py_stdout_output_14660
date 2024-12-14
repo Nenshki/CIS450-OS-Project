@@ -1,0 +1,82 @@
+[0;32mI (97) boot:  4 storage          Unknown data     01 82 0ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4005880e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1990
+load:0x403cc710,len:0xd98
+load:0x403ce710,len:0x304c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Dec 10 2024 22:52:05[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (47) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 fctry            WiFi data        01 02 00010000 00006000[0m
+[0;32mI (90) boot:  3 factory          factory app      00 00 00020000 00352000[0m
+[0;32mI (97) boot:  4 storage          Unknown data     01 82 00372000 00064000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (109) esp_image: segment 0: paddr=00020020 vaddr=3c080020 size=2746a0h (2573984) map[0m
+[0;32mI (479) esp_image: segment 1: paddr=002946c8 vaddr=3fc90c00 size=01fc4h (  8132) load[0m
+[0;32mI (481) esp_image: segment 2: paddr=00296694 vaddr=40380000 size=09984h ( 39300) load[0m
+[0;32mI (492) esp_image: segment 3: paddr=002a0020 vaddr=42000020 size=7a760h (501600) map[0m
+[0;32mI (564) esp_image: segment 4: paddr=0031a788 vaddr=40389984 size=07114h ( 28948) load[0m
+[0;32mI (569) esp_image: segment 5: paddr=003218a4 vaddr=50000200 size=00004h (     4) load[0m
+[0;32mI (575) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (576) boot: Disabling RNG early entropy source...[0m
+[0;32mI (593) cpu_start: Unicore app[0m
+[0;32mI (601) cpu_start: Pro cpu start user code[0m
+[0;32mI (601) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (601) app_init: Application information:[0m
+[0;32mI (604) app_init: Project name:     c3_knob_panel[0m
+[0;32mI (610) app_init: App version:      v5.3.2[0m
+[0;32mI (614) app_init: Compile time:     Dec 10 2024 23:03:47[0m
+[0;32mI (620) app_init: ELF file SHA256:  7472e1858...[0m
+[0;32mI (626) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (630) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (635) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (640) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (645) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (652) heap_init: At 3FC9C530 len 00023AD0 (142 KiB): RAM[0m
+[0;32mI (658) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (665) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (672) heap_init: At 50000204 len 00001DE4 (7 KiB): RTCRAM[0m
+[0;32mI (679) spi_flash: detected chip: generic[0m
+[0;32mI (683) spi_flash: flash io: qio[0m
+[0;32mI (688) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (694) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (701) main_task: Started on CPU0[0m
+[0;32mI (705) main_task: Calling app_main()[0m
+[0;32mI (709) main: Compile time: Dec 10 2024 23:04:11[0m
+[0;32mI (718) LVGL: Starting LVGL task[0m
+[0;32mI (720) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (727) gc9a01: LCD panel create success, version: 1.2.0[0m
+[0;32mI (858) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (858) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (865) Knob: Iot Knob Config Succeed, encoder A:10, encoder B:6, direction:0, Version: 0.1.5[0m
+[0;32mI (875) button: IoT Button Version: 3.4.0[0m
+[0;32mI (879) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (889) main: Display LVGL demo[0m
+[0;32mI (892) LVGL_PUB: add group for encoder[0m
+[0;32mI (897) lvgl_basic: Enter home page[0m
+[0;32mI (907) lvgl_basic: Init clock time ok, 0x3fc9506c[0m
+[0;32mI (1414) ESP32-C3-LCDKit: BLINK_GPIO setting 8[0m
+[0;32mI (1415) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1429) ESP32-C3-LCDKit: Partition size: total: 369221, used: 359432[0m
+[0;32mI (1432) main_task: Returned from app_main()[0m
+[0;32mI (14855) main_menu: Invalid Enter factory[0m
+[0;32mI (22388) app_audio: play: /spiffs/wash_end_en_1ch.mp3[0m
+[0;32mI (22388) app_audio: PLAYING[0m
+[0;32mI (22393) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (22394) Adev_Codec: Open codec device OK[0m
+[0;32mI (26777) app_audio: IDLE[0m
+[0;32mI (31257) main_menu: Invalid Enter factory[0m
